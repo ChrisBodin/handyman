@@ -63,10 +63,12 @@ GEM
     bootsnap (1.9.3)
       msgpack (~> 1.0)
     builder (3.2.4)
-    byebug (11.1.3)
+    coderay (1.1.3)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     erubi (1.10.0)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -89,6 +91,9 @@ GEM
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
     pg (1.2.3)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     puma (5.5.2)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -139,16 +144,18 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.5.3)
+    zeitwerk (2.5.1)
 
 PLATFORMS
+  x86_64-darwin-20
   x86_64-darwin-21
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
-  byebug
+  faker
   listen (~> 3.3)
   pg (~> 1.1)
+  pry
   puma (~> 5.0)
   rails (~> 6.1.4, >= 6.1.4.4)
   spring
