@@ -7,7 +7,7 @@ const CommentList = ({ comments, serviceId, deleteComment, updateComment }) => {
       { comments.map( p => 
         <>
           
-          <commentshow 
+          <CommentShow 
             {...p} 
             serviceId={serviceId} 
             deleteComment={deleteComment} 
